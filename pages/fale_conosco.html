@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siteprev - Fale Conosco</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="../assets/imagens/logo.jpg" alt="Imagem contendo o logo do site" width="15%" height="15%">
+        <nav>
+            <a href="../index.html">Homepage</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="quem_somos.html">Quem somos</a>
+            <a href="nossa_historia.html">Nossa história</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fale conosco</h1>
+
+        <br>
+<p>Entre em contato conosco através do whats'app 55 11 9abcdefgh ou pelo e-mail sitepreve@siteprev.com</p>
+<br>
+        <p>Você também pode deixar sua mensagem preenchendo o formulário abaixo.<br>
+            Lembrando que os campos marcados com * são de preenchimento automático.</p>
+<br>
+
+<form method="get" action="">
+
+    <fieldset>
+        <legend>Dados pessoais</legend>
+    <label for="nome-completo">Digite seu nome completo:</label>
+    <input type="text" name="nome-completo" id="nome-completo" required><span>*</span><br>
+
+    <label for="data-nascimento">Digite ou selecione a sua data de nascimento:</label>
+    <input type="date" name="data-nascimento" id="data-nascimento"><br>
+
+            <input type="radio" name="masculino" value="M" id="masculino">Masculino<br>
+        <label for="masculino">Sexo:</label>
+<input type="radio" name="feminino" value="F" id="feminino">Feminino<br>
+<label for="feminino">Sexo:</label>
+    </fieldset>
+
+    <fieldset>
+<legend>Endereço</legend>
+<label for="cep">Digite o cep de sua residência:</label>
+<input type="text" name="cep" id="cep"><br>
+
+<label for="rua">Digite seu logradouro (rua, travessa, avenida, etc.):</label>
+<input type="text" name="rua" id="rua"><br>
+
+<label for="numero">Digite o numero da sua residência:</label>
+<input type="text" name="numero" id="numero"><br>
+
+<label for="complemento">Digite o complemento:</label>
+<input type="text" name="complemento" id="complemento"><br>
+
+<label for="bairro">Digite o bairro:</label>
+<input type="text" name="bairro" id="bairro"><br>
+
+<label for="cidade">Digite a cidade:</label>
+<input type="text" name="cidade" id="cidade"><br>
+
+<label for="estado">Digite o estado</label>
+<input type="text" name="estado" id="estado">
+    </fieldset>
+
+    <fieldset>
+<legend>Dados de contato</legend>
+<label for="telefone">Digite seu telefone com DDD:</label>
+<input type="tel" name="telefone" id="telefone">
+
+<label for="celular">Digite o telefone celular com DDD:</label>
+<input type="tel" name="celular" id="celular" required><span>*</span>
+
+<label for="email">Digite o endereço de e-mail:</label>
+<input type="email" name="email" id="email" required><span>*</span>
+
+<label for="assunto">Digite aqui o assunto da sua mensagem:</label>
+<input type="text" name="mensagem" id="mensagem">
+
+<label for="mensagem">Digite aqui a sua mensagem</label>
+<textarea name="mensagem" id="mensagem" cols="80" rows="30"></textarea>
+    </fieldset>
+    
+    <input type="submit" value="Enviar formulário">
+    <input type="reset" value="Limpar formulário">
+</form>
+
+<script src="../arquivos_javascript/consulta-cep.js"></script>
+<script src="../arquivos_javascript/consulta-endereco.js"></script>
+    </main>
+
+    
+    <footer>
+        <p>©  2023<br>
+® Siteprev - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

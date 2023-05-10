@@ -1,0 +1,250 @@
+
+/* 
+colors 
+
+
+-- Primari : #0c8599 claro / 
+-- Tints:   #e3fafc cor de fundo da logo / #e7f3f5 outro tem de cor da logo
+-- Shades:  #0a6a7a escuro para hover
+-- Accentes:
+-- Greys
+#555
+#333
+
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+
+--- 07 WHITESPACE
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 10px; */
+    /* 10px / 16px = 0,625 = 62.5% */
+    /* Percentagae of user's browser font-size setting */
+    font-size: 62.25%;
+}
+
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/********************************************/
+/*  CONMPONENTES REUSAVEIS GERAIS */
+/********************************************/
+.heading-primary {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 4.8rem;
+}
+
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+
+
+    background-color: #0c8599;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+
+    /* coloca tempo de transisão das cores */
+    transition: background-color 0,3s;
+
+}
+
+
+.btn--full:link,
+.btn--full:visited {
+    background-color:#0c8599 ;
+    color: #fff;
+
+}
+.btn--full:hover,
+.btn--full:active {
+    background-color:#0a6a7a ;
+    
+
+}
+
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #e7f3f5;
+    /* coddigo para colocar o borda do lado de dentro */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important; 
+    /* é uma boa pratica colocar qual cofigo deve ser priorizado */
+}
+
+/********************************************/
+/* HEADER */
+/********************************************/
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7f3f5;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo {
+    height: 6.4rem;
+}
+
+/********************************************/
+/* NAVEGATION */
+/********************************************/
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #0a6a7a;
+
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #0c8599;
+ }
+ .main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: #0a6a7a;
+
+}
+
+
+
+
+/********************************************/
+/* HERO SECTION */
+/********************************************/
+.section-hero {
+    background-color:#e7f3f5;
+    padding: 9.6rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+
+}
+
+
+.hero-img {
+    width: 100%;
+}
+
+
+
+.clientes-atendidos {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+
+.clientes-imgs {
+    display: flex;
+}
+
+.clientes-imgs img {
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #e7f3f5;
+}
+
+.clientes-imgs img:last-child {
+    margin: 0;
+}
+
+.cliente-texto {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cliente-texto span {
+    color: #0a6a7a;
+    font-weight: 700;
+}
