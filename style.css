@@ -10,14 +10,18 @@ colors
 -- Greys
 #555
 #333
-
+--- font weights 
+ default : 400
+  medium :500
+  Semi-bold :600
+ bold : 700
 
 
 --- 05 SHADOWS
 
 
 --- 06 BORDER-RADIUS
-
+default : 9px
 
 --- 07 WHITESPACE
 
@@ -62,6 +66,29 @@ body {
 /********************************************/
 /*  CONMPONENTES REUSAVEIS GERAIS */
 /********************************************/
+
+.container {
+    /*  1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr)
+}
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr)
+}
+.grid--4-cols{
+    grid-template-columns: repeat(4, 1fr)
+}
+
 .heading-primary {
     font-size: 5.2rem;
     font-weight: 700;
@@ -122,6 +149,8 @@ body {
     margin-right: 1.6rem !important; 
     /* é uma boa pratica colocar qual cofigo deve ser priorizado */
 }
+
+
 
 /********************************************/
 /* HEADER */
@@ -247,4 +276,15 @@ body {
 .cliente-texto span {
     color: #0a6a7a;
     font-weight: 700;
+}
+
+/********************************************/
+/* sevices */
+/********************************************/
+.section-how {
+    padding: 9.6rem 0;
+}
+
+.servico-img {
+    width: 50%;
 }

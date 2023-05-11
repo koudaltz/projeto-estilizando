@@ -5,20 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siteprev - Serviços</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Siteprev - homepage</title>
 </head>
 
 <body>
 
-    <header>
-        <img src="../assets/imagens/logo.jpg" alt="Imagem contendo o logo do site" width="15%" height="15%">
-        <nav>
-            <a href="../index.html">Homepage</a>
-            <a href="nossa_historia.html">Nossa história</a>
-            <a href="quem_somos.html">Quem somos</a>
-            <a href="fale_conosco.html">Fale Conosco</a>
+    <header class="header">
+        <img class="logo" src="/assets/imagens/1logo.jpg.png" alt="logotipo">
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link"          href="/index.html">home</a></li>
+                <li><a class="main-nav-link  nav-cta" href="/pages/servicos.html">Serviços</a></li>
+                <li><a class="main-nav-link"          href="/pages/quem_somos.html">Quem somos</a></li>
+                <li><a class="main-nav-link"          href="/pages/nossa_historia.html">Nossa historia</a></li>
+                <li><a class="main-nav-link"          href="/pages/fale_conosco.html">Fale Conosco</a></li>
+            </ul>
         </nav>
     </header>
+    
+        <main>
+            <section class="section-how">
+                <div class="container">
+                    <span class="subheading">Como Trabalhamos</span>
+                    <h2 class="heading-secondary">Nossos Serviços</h2>
+                    
+                </div>
+                <div class="container grid grid--2-cols">
+
+                    <!-- SERVISO NUMERO 1 -->
+                    <div class="servico-text-box">
+                        <p class="servico-number">01</p>
+                        <h3 class="heading-tertiary">Avaliação de segurança</h3>
+
+                        <p class="servico-description">
+                            Realizamos testes completos de segurança em seus sistemas e infraestrutura de TI para identificar possíveis
+                            vulnerabilidades e ameaças. E de acordo com os resultados obtidos, oferecemos recomendações e soluções
+                            personalizadas para melhorar sua segurança.
+
+                        </p>
+                    </div>
+                    <div class="servico-img-box">
+                        <img class="servico-img" src="/assets/imagens/servicos/servico avaliação de segurança.jpg" alt="uma mulher explicando alguma coisa para um homem, eles estão na mesa com um documento e uma caneta em maos">
+                    </div>
+                    <!-- SERVISO NUMERO 02 -->
+                    <div class="servico-img-box">
+                        <img class="servico-img" src="/assets/imagens/servicos/seguranca de dados.jpg" alt="5 pessoas sentadas em volta de uma mesa, com dados de uma empresa">
+                    </div>
+                    <div class="servico-text-box">
+                        <p class="servico-number">02</p>
+                        <h3 class="heading-tertiary">Proteção de dados</h3>
+
+                        <p class="servico-description">
+                            oferecemos soluções de proteção de dados para garantir a segurança e proteção dos mesmos, incluindo
+                            criptografia, backup e recuperação de dados, controle de acesso e políticas de retenção de dados.
+
+                        </p>
+                    </div>
+                    <div class="servico-text-box">
+                        <p class="servico-number">03</p>
+                        <h3 class="heading-tertiary">Segurança de rede</h3>
+
+                        <p class="servico-description">
+                            Trabalhamos na proteção das redes de computadores de uma organização contra ameaças externas, como hackers e
+                            malware. Nosso trabalho envolve a identificação e análise de vulnerabilidades de segurança, a criação de
+                            políticas e procedimentos de segurança, a implementação de soluções de segurança, a monitorização de
+                            atividades suspeitas na rede e a resposta a incidentes de segurança.
+
+                        </p>
+                    </div>
+                    <div class="servico-img-box">
+                        <img class="servico-img" src="/assets/imagens/servicos/seguranca de rede.jpg" alt="um mecbook me uma mesa branca com o vpn aberto,com um anbiemte calmo">
+                    </div>
+
+                </div>
+            </section>
+            
+        </main>
 
     <main>
         <h1>Serviços</h1>
