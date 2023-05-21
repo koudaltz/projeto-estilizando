@@ -1,154 +1,5 @@
 
-/* 
-colors 
 
-
--- Primari : #0c8599 claro / 
--- Tints:   #e3fafc cor de fundo da logo / #e7f3f5 outro tem de cor da logo
--- Shades:  #0a6a7a escuro para hover
--- Accentes:
--- Greys
-#555
-#333
---- font weights 
- default : 400
-  medium :500
-  Semi-bold :600
- bold : 700
-
-
---- 05 SHADOWS
-
-
---- 06 BORDER-RADIUS
-default : 9px
-
---- 07 WHITESPACE
-
--Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-html{
-    /* font-size: 10px; */
-    /* 10px / 16px = 0,625 = 62.5% */
-    /* Percentagae of user's browser font-size setting */
-    font-size: 62.25%;
-}
-
-
-
-body {
-    font-family: "Rubik", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
-}
-
-/********************************************/
-/*  CONMPONENTES REUSAVEIS GERAIS */
-/********************************************/
-
-.container {
-    /*  1140px */
-    max-width: 120rem;
-    padding: 0 3.2rem;
-    margin: 0 auto;
-}
-.grid {
-    display: grid;
-    gap: 9.6rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--2-cols {
-    grid-template-columns: repeat(2, 1fr)
-}
-.grid--3-cols{
-    grid-template-columns: repeat(3, 1fr)
-}
-.grid--4-cols{
-    grid-template-columns: repeat(4, 1fr)
-}
-
-.heading-primary {
-    font-size: 5.2rem;
-    font-weight: 700;
-    line-height: 1.05;
-    color: #333;
-    letter-spacing: -0.5px;
-    margin-bottom: 4.8rem;
-}
-
-
-.btn:link,
-.btn:visited {
-    display: inline-block;
-
-
-    background-color: #0c8599;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-
-    /* coloca tempo de transisão das cores */
-    transition: background-color 0,3s;
-
-}
-
-
-.btn--full:link,
-.btn--full:visited {
-    background-color:#0c8599 ;
-    color: #fff;
-
-}
-.btn--full:hover,
-.btn--full:active {
-    background-color:#0a6a7a ;
-    
-
-}
-
-
-.btn--outline:link,
-.btn--outline:visited {
-    background-color: #fff;
-    color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-    background-color: #e7f3f5;
-    /* coddigo para colocar o borda do lado de dentro */
-    box-shadow: inset 0 0 0 3px #fff;
-}
-
-.margin-right-sm {
-    margin-right: 1.6rem !important; 
-    /* é uma boa pratica colocar qual cofigo deve ser priorizado */
-}
 
 
 
@@ -165,6 +16,8 @@ body {
 
     height: 9.6rem;
     padding: 0 4.8rem;
+
+
 }
 
 .logo {
@@ -285,6 +138,80 @@ body {
     padding: 9.6rem 0;
 }
 
+.servico-description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.servico-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .servico-img {
     width: 50%;
+}
+
+.servico-number {
+    color: #ddd;
+    font-size: 8.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+
+
+}
+/********************************************/
+/* quem somos */
+/********************************************/
+.section-quem-somos{
+    padding: 9.6rem, 0;
+    
+}
+
+.servico-description-quem-somos{
+    font-size: 1.8rem;
+    line-height:1.2;
+}
+.quem-somos-text-box {
+    border-radius: 9px;
+    align-items: center;
+    background-color: #fff;
+    padding: 1.6rem;
+    margin-top: 5.2rem;
+    margin-bottom: 9.6rem;
+}
+.quem-somos-img-box {
+    display:flex;
+    padding: 1.6rem;
+    margin-top: 4.6rem;
+    align-items: center;
+    justify-content: center;
+}
+.quem-somos-img {
+    width: 90%;
+}
+
+/********************************************/
+/* nossa hisoria */
+/********************************************/
+.section-nossa-historia {
+    padding: 9.6rem, 0;
+}
+
+.servico-description-nossa-historia {
+    font-size: 1.8rem;
+    line-height: 1.2;
+
+}
+.nossa-historia-text-box{
+    background-color: #eee;
+    border-radius: 9px;
+    align-items: center;
+    padding: 1.6rem;
+    margin-top: 5.2rem;
+    margin-bottom: 0.5rem;
+}
+.margin-nossa-historia {
+    background-color: #fff;
+    margin: 1.6rem 8.8rem;
 }

@@ -1,0 +1,198 @@
+/* 
+colors 
+
+
+-- Primari : #0c8599 claro / 
+-- Tints:   #e3fafc cor de fundo da logo / #e7f3f5 outro tem de cor da logo
+-- Shades:  #0a6a7a escuro para hover
+-- Accentes:
+-- Greys
+#555
+#333
+--- font weights 
+ default : 400
+  medium :500
+  Semi-bold :600
+ bold : 700
+
+ --- line heights
+ default : 1
+ small: 1.5
+ medium: 1.2
+ Paragraph default: 1.6
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+default : 9px
+
+--- 07 WHITESPACE
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 10px; */
+    /* 10px / 16px = 0,625 = 62.5% */
+    /* Percentagae of user's browser font-size setting */
+    font-size: 62.25%;
+}
+
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+/********************************************/
+/*  CONMPONENTES REUSAVEIS GERAIS */
+/********************************************/
+
+.container {
+    /*  1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr)
+}
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr)
+}
+.grid--4-cols{
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.grid--center-v{
+    align-items: center;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.heading-primary-1,
+.heading-secondary-1 {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+    
+}
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 4.8rem;
+}
+.heading-primary-1{
+    font-size: 5.2rem;
+    line-height:1.5;
+    margin-bottom: 4.8;
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 9.6rem;
+}
+.heading-secondary-1{
+    font-size: 4.4rem;
+    line-height: 3.2;
+    margin-bottom: 2.4;
+}
+
+.heading-tertiary {
+    font-size: 3.6rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.2rem;
+}
+.subheading{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0c8599 ;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+
+
+    background-color: #0c8599;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+
+    /* coloca tempo de transisão das cores */
+    transition: background-color 0,3s;
+
+}
+
+
+.btn--full:link,
+.btn--full:visited {
+    background-color:#0c8599 ;
+    color: #fff;
+
+}
+.btn--full:hover,
+.btn--full:active {
+    background-color:#0a6a7a ;
+    
+
+}
+
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: #fff;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: #e7f3f5;
+    /* coddigo para colocar o borda do lado de dentro */
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+    margin-right: 1.6rem !important; 
+    /* é uma boa pratica colocar qual cofigo deve ser priorizado */
+}
