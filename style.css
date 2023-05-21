@@ -192,15 +192,19 @@
 }
 
 /********************************************/
-/* nossa hisoria */
+/* trabalhe conosco */
 /********************************************/
 .section-nossa-historia {
     padding: 9.6rem, 0;
 }
-
+.servico-description-trabalhe-conosco {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
 .servico-description-nossa-historia {
     font-size: 1.8rem;
     line-height: 1.2;
+    margin-bottom: 5.2rem;
 
 }
 .nossa-historia-text-box{
